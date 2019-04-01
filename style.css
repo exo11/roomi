@@ -934,6 +934,7 @@ nav {
     margin: 0 auto;
     max-width: 996px;
     width: 100%;
+    border-radius: 50px;
 }
 
 @media (max-width:450px) {
@@ -960,6 +961,7 @@ nav {
     height: 100%;
     transform: translateX(0);
     transition: transform 1s ease-in-out;
+    border-radius: 50px;
 }
 
 .slider__fs,
@@ -1007,6 +1009,7 @@ nav {
     background-position: 50%;
     height: 100%;
     width: 100%;
+    border-radius: 50px;
 }
 
 @media (max-width:450px) {
