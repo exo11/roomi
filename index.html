@@ -18,16 +18,19 @@
             <div class="header__menu-container">
                 <div class="header__mainmenu">
                     <div class="header__menu-group">
-                        <a class="header__logo" href="/"><h1>Roomi24</h1><span class="header__logo__text">Кабинеты в аренду</span></a>
+                        <a class="header__logo mainlink" href="/" data-link="home">
+                            <h1 data-link="home">Roomi24</h1>
+                            <span class="header__logo__text" data-link="home">Кабинеты в аренду</span>
+                        </a>
                     </div>
                     <div class="header__menu-group header__menu-group_expanding">
                         <nav class="header__navigation">
-                            <a class="header__navlink" href="/news">Новости</a>
-                            <a class="header__navlink header__navlink_important" href="/cabinets">Кабинеты</a> 
-                            <a class="header__navlink" href="/rules">Правила</a> 
-                            <a class="header__navlink" href="/payment-options">Цены<div class="indicer">СКИДКИ</div></a> 
-                            <a class="header__navlink header__navlink_important" href="/contacts">Контакты</a> 
-                            <a class="header__navlink header__navlink_important" href="/schedule">Расписание</a> 
+                            <a class="header__navlink mainlink" href="/news" data-link="news">Новости</a>
+                            <a class="header__navlink mainlink header__navlink_important" href="/cabinets" data-link="places">Кабинеты</a> 
+                            <a class="header__navlink mainlink" href="/rules" data-link="rules">Правила</a> 
+                            <a class="header__navlink mainlink" href="/payment-options" data-link="price">Цены<div class="indicer">СКИДКИ</div></a> 
+                            <a class="header__navlink mainlink header__navlink_important" href="/contacts" data-link="contacts">Контакты</a> 
+                            <a class="header__navlink mainlink header__navlink_important" href="/schedule" data-link="schedule">Расписание</a> 
                         </nav>
                     </div>
                     <div class="header__menu-group header__menu-group_right">
@@ -66,10 +69,10 @@
                     </div>
                     <div class="sidebar__menu">
                         <div class="menu">
-                            <a class="menu__link" href="/news">Новости</a> 
-                            <a class="menu__link" href="/articles">Статьи</a> 
-                            <a class="menu__link" href="/rules">Правила</a> 
-                            <a class="menu__link" href="/payment-options">Цены</a> 
+                            <a class="menu__link mainlink" href="/news" data-link="news">Новости</a> 
+                            <!--<a class="menu__link" href="/articles">Статьи</a>-->
+                            <a class="menu__link mainlink" href="/rules" data-link="rules">Правила</a> 
+                            <a class="menu__link mainlink" href="/payment-options" data-link="price">Цены</a> 
                             <a class="menu__link" href="/user">Профиль</a> 
                             <a class="menu__link" href="/user/reservations">Мои бронирования</a> 
                             <a class="menu__link" href="/user/invoices">Счета</a>
@@ -84,7 +87,8 @@
         </header>
 
         <main class="site__content">
-           
+        
+        <div class="dynamic_container dynamic_visible" data-id="home">   
            <h1 class="site__title">Почасовая аренда помещений в Москве</h1>
                 <div class="site__top-slider">
                     <div class="slider" tabindex="0">
@@ -297,10 +301,11 @@
                         <p class="author">Надежда, основатель проекта</p>
                     </section>
                 </div> 
-
+        </div>
                 <!--/////////////////////////////////////////////////////Новости/////////////////////////////////////////////////////////////-->
                 
-                <div class="cut_line"></div>
+        <div class="dynamic_container" data-id="news">   
+                <!--<div class="cut_line"></div>-->
                 <h1 class="site__title">Новости</h1>
                 <div class="site__section site__section_text articles">
                     
@@ -358,10 +363,11 @@
                     </article>
                 
                 </div>
-
+        </div>
                 <!--/////////////////////////////////////////////////////Кабинеты/////////////////////////////////////////////////////////////-->
                 
-                <div class="cut_line"></div>
+        <div class="dynamic_container" data-id="places">   
+                <!--<div class="cut_line"></div>-->
                 <h1 class="site__title">Кабинеты Чистые пруды</h1>
                 <div class="site__section site__section_text">
                     <ul class="places">
@@ -480,7 +486,7 @@
 
                     </ul> 
                 </div>
-
+        
                 <!--///////////////////////////Кабинет///////////////////////////////-->
                 
                 <div class="cut_line_small"></div>
@@ -544,10 +550,11 @@
                         <p class="text-center"><a class="button" href="/schedule/myasnitskaya">Забронировать</a></p>
                     </article>
                 </div>
-
+        </div>
                 <!--/////////////////////////////////////////////////////Правила/////////////////////////////////////////////////////////////-->
 
-                <div class="cut_line"></div>
+        <div class="dynamic_container" data-id="rules">   
+                <!--<div class="cut_line"></div>-->
                 <div class="remote-html">
                     <h1 class="site__title">Правила аренды кабинетов</h1>
                     <section class="site__section site__section_text">
@@ -771,10 +778,11 @@
                         <p class="text-center">Полный текст Договора — Оферты Вы увидите в ходе бронирования.</p>
                     </section>
                 </div>
-
+        </div>
                 <!--/////////////////////////////////////////////////////Цены/////////////////////////////////////////////////////////////-->
                 
-                <div class="cut_line"></div>
+        <div class="dynamic_container" data-id="price">   
+                <!--<div class="cut_line"></div>-->
                 <div class="banner-slider">
                     <div class="slider" tabindex="0">
                         <div id="banner-slider__tape" class="slider__tape" style="transform: translateX(0px); transition: none 0s ease 0s;">
@@ -980,10 +988,11 @@
                         <p>Возврат на бонусный счёт делается мгновенно.</p>
                     </section> 
                 </div>
-                
+        </div>                
                 <!--/////////////////////////////////////////////////////Контакты/////////////////////////////////////////////////////////////-->
                 
-                <div class="cut_line"></div>
+        <div class="dynamic_container" data-id="contacts">   
+                <!--<div class="cut_line"></div>-->
                 <div class="remote-html">
                     <h1 class="site__title">Контакты и расположение</h1>
                     <section class="site__section site__contacts site__section_text">
@@ -1087,10 +1096,11 @@
                         <iframe class="map" src="//yandex.ru/map-widget/v1/?um=constructor%3Ad3079a07add5dbb00aa74721d215a90fb9683b6bbd8adebfe3c81fa9f6e87c92&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
                     </section>
                 </div>
-
+        </div>
                 <!--/////////////////////////////////////////////////////Политика_конфиденциальности/////////////////////////////////////////////////////////////-->
                 
-                <div class="cut_line"></div>
+        <div class="dynamic_container" data-id="policy">  
+                <!--<div class="cut_line"></div>-->
                 <div class="remote-html">
                     <section class="site__section site__section_text site__policy">
                         <h1 class="site__title">Политика конфиденциальности</h1>
@@ -1292,7 +1302,8 @@
                         </ol>
                     </section>
                 </div>
-
+        </div> 
+        <div class="dynamic_container" data-id="shedule"></div>
         </main>
         
             <footer class="footer">
@@ -1304,12 +1315,12 @@
                     </div>
                     <div class="footer__part footer__main">
                         <h3 class="footer__header">Roomi24</h3>
-                        <p><a href="/">О нас</a></p>
-                        <p><a href="/articles">Новости</a></p>
-                        <p><a href="/places">Кабинеты</a></p>
-                        <p><a href="/rules">Правила</a></p>
-                        <p><a href="/payment-options">Цены</a></p>
-                        <p><a href="/schedule/maroseyka">Расписание</a></p>
+                        <p><a class="mainlink" href="/" data-link="home">О нас</a></p>
+                        <p><a class="mainlink" href="/articles" data-link="news">Новости</a></p>
+                        <p><a class="mainlink" href="/places" data-link="places">Кабинеты</a></p>
+                        <p><a class="mainlink" href="/rules" data-link="rules">Правила</a></p>
+                        <p><a class="mainlink" href="/payment-options" data-link="price">Цены</a></p>
+                        <p><a class="mainlink" href="/schedule/maroseyka" data-link="schedule">Расписание</a></p>
                     </div>
                     <div class="footer__part footer__user">
                         <h3 class="footer__header">Пользователю</h3>
@@ -1331,7 +1342,7 @@
                             </a>
                         </p>
                         <p><a href="/account">Реквизиты</a></p>
-                        <p><a href="/policy">Политика конфиденциальности</a></p>
+                        <p><a class="mainlink" href="/policy" data-link="policy">Политика конфиденциальности</a></p>
                         <p class="flex-spacer"></p>
                         <p>© Максим Максимов, 2017…2019</p>
                     </div>

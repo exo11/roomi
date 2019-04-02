@@ -115,3 +115,25 @@ let slideNum = 0,
     console.log(slideArr[slideBannerNum]);
   }
 
+/////////////////////////////routing/////////////////////////////
+
+const mainLink = document.getElementsByClassName('mainlink'),
+  dynamicContainer = document.getElementsByClassName('dynamic_container');
+
+
+Array.from(mainLink).forEach(link => link.addEventListener('click', mainLinkHandler));
+
+function mainLinkHandler(e) {
+  Array.from(dynamicContainer).forEach(container => {
+    if (e.target.dataset.link === container.dataset.id) {
+      container.style.display = 'block';
+      setTimeout(() => container.classList.add('dynamic_visible'), 100);
+    } else {
+      container.classList.remove('dynamic_visible');
+      container.style.display = 'none';
+    }
+  }); 
+  if (e.target.classList.contains('menu__link')) {
+    sideBarClose();
+  };
+}
