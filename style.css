@@ -2154,35 +2154,36 @@ img.photo {
 
 */
 
-
+.ooops__wrapper {
+  height: 100%;
+  display: flex;
+  margin: 10px auto;
+}
 
 .ooops {
-   height: 370px;
-    margin: 70px auto 50px auto;
-    max-width: 596px;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    flex-grow: 1;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    //padding: 0 30px 30px;
+  height: 370px;
+  margin: auto;
+  max-width: 596px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 @media (max-width:630px) {
-    .ooops {
-        height: 230px;
-        max-width: 356px;
-        margin-top: 130px;
-    }
+  .ooops {
+    height: 230px;
+    max-width: 356px;
+  }
 }
 
 @media (max-width:411px) {
-    .ooops {
-        height: 200px;
-        max-width: 296px;
-        margin-top: 70px;
-    }
+  .ooops {
+    height: 200px;
+    max-width: 296px;
+  }
 }
 /*----------------------------------*/
 
