@@ -118,6 +118,9 @@ let slideNum = 0,
 /////////////////////////////routing/////////////////////////////
 
 const mainLink = document.getElementsByClassName('mainlink'),
+  menuLink = document.getElementsByClassName('menu__link'),
+  navLink = document.getElementsByClassName('header__navlink'),
+  footerLink = document.getElementsByClassName('footer__navlink'),
   dynamicContainer = document.getElementsByClassName('dynamic_container');
 
 
@@ -133,7 +136,27 @@ function mainLinkHandler(e) {
       container.style.display = 'none';
     }
   }); 
-  if (e.target.classList.contains('menu__link')) {
-    sideBarClose();
-  };
+  Array.from(mainLink).forEach(link => {
+    link.classList.remove('menu__link_active','header__navlink_active','footer__link_active');
+    if (e.target.dataset.link === link.dataset.link) {
+      mainLinkActive(link);
+    }
+  });
 }
+
+function mainLinkActive(link) {
+  if (link.classList.contains('menu__link')) {
+    sideBarClose();
+    link.classList.add('menu__link_active');
+  } else if (link.classList.contains('header__navlink')) {
+    link.classList.add('header__navlink_active');
+  } else if (link.classList.contains('footer__navlink')) {
+    link.classList.add('footer__link_active');
+  }
+}
+
+
+
+
+
+
