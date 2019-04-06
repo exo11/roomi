@@ -137,7 +137,7 @@ function mainLinkHandler(e) {
     }
   }); 
   Array.from(mainLink).forEach(link => {
-    link.classList.remove('menu__link_active','header__navlink_active','footer__link_active');
+    link.classList.remove('menu__link_active','header__navlink_active','footer__link_active','header__userlink_active');
     if (e.target.dataset.link === link.dataset.link) {
       mainLinkActive(link);
     }
@@ -150,9 +150,11 @@ function mainLinkActive(link) {
     link.classList.add('menu__link_active');
   } else if (link.classList.contains('header__navlink')) {
     link.classList.add('header__navlink_active');
-  } else if (link.classList.contains('footer__navlink')) {
+  } else if (link.classList.contains('header__userlink')) {
+    link.classList.add('header__userlink_active');
+  } else if (link.classList.contains('footer__link')) {
     link.classList.add('footer__link_active');
-  }
+  } 
 }
 
 

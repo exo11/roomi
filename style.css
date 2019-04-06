@@ -79,46 +79,6 @@
     content: "\F16D"
 }
 
-/*.fa-angle-left:before {
-    content: "\F104"
-}
-
-.fa-angle-right:before {
-    content: "\F105"
-}
-
-.fa-check-square-o:before {
-    content: "\F046"
-}
-
-.fa-square-o:before {
-    content: "\F096"
-}
-
-.fa-trash-o:before {
-    content: "\F014"
-}
-
-.fa-ban:before {
-    content: "\F05E"
-}
-
-.fa-home:before {
-    content: "\F015"
-}
-
-.fa-moon-o:before {
-    content: "\F186"
-}
-
-.fa-file-text-o:before {
-    content: "\F0F6"
-}
-
-.fa-rub:before {
-    content: "\F158"
-}*/
-
 /*---------------------------------general---------------------------------*/
 body,
 html {
@@ -204,90 +164,6 @@ input[type=number] {
     background: #ccc
 }
 
-/*.button_white.button_framed {
-    border: 1px solid #ccc
-}
-
-.button_warning {
-    background: #d44;
-    color: #fff
-}
-
-.button_warning:hover {
-    background: #e46969
-}
-
-.button_warning:active {
-    background: #ac3c3c
-}
-
-.button_cancel {
-    background: #f9f9f9;
-    color: #000
-}
-
-.button_cancel:hover {
-    background: #fafafa
-}
-
-.button_cancel:active {
-    background: #c7c7c7
-}
-
-.button_short {
-    padding-left: 10px;
-    padding-right: 10px
-}
-
-.button:disabled {
-    background: #e4e4e4;
-    color: #aaa;
-    cursor: default
-}
-
-.button:disabled:hover {
-    background: #e9e9e9
-}
-
-.button:disabled:active {
-    background: #b6b6b6
-}
-
-.buttons-group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap
-}
-
-.buttons-group>* {
-    margin-right: 15px
-}
-
-.buttons-group>:last-child {
-    margin-right: 0
-}
-
-.buttons-group_right {
-    justify-content: flex-end
-}
-
-.buttons-group_right>* {
-    margin-left: 15px;
-    margin-right: 0
-}
-
-.buttons-group_right>:first-child {
-    margin-left: 0
-}
-
-.buttons-group_center {
-    justify-content: center
-}
-
-.buttons-group_top>* {
-    margin-top: 15px
-}
-*/
 .site {
     color: #444;
     display: flex;
@@ -1098,80 +974,6 @@ nav {
     text-align: left;
 }
 
-/*@media (max-width:1023px) {
-    .point__content {
-        display: block;
-    }
-}
-
-@media (max-width:1023px) {
-    .point__content>* {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-
-    .point__content>:last-child {
-        margin-bottom: 0;
-    }
-}*/
-
-/*.pseudolink {
-    border-bottom: 1px dashed;
-    border-bottom-color: inherit;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color: #ffa939;
-    text-decoration: none
-}
-
-.pseudolink:hover {
-    color: #f07100
-}
-
-.pseudolink:active {
-    color: #ffc18a
-}
-
-.collapsed__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .5s ease-in-out
-}
-
-.collapsed_opened>.collapsed__content {
-    max-height: 400px
-}
-
-@media (max-width:411px) {
-    .collapsed_opened>.collapsed__content {
-        max-height: 900px
-    }
-}
-
-.collapsed_large.collapsed_opened>.collapsed__content {
-    max-height: 900px
-}
-
-@media (max-width:411px) {
-    .collapsed_large.collapsed_opened>.collapsed__content {
-        max-height: 1600px
-    }
-}
-
-.collapsed__button {
-    cursor: pointer
-}
-
-.site__main .collapsed__label {
-    text-align: center
-}--*/
-
-
-
 .how {
     color: #000;
     display: flex;
@@ -1630,58 +1432,7 @@ img.photo {
     color: #4547ed
 }
 
-/*--.table {
-    border-collapse: collapse;
-    color: inherit;
-    font: inherit;
-    word-break: break-all
-}
 
-.table td,
-.table th {
-    padding: 5px
-}
-
-.table td:first-child,
-.table th:first-child {
-    padding-left: 0
-}
-
-.table td:last-child,
-.table th:last-child {
-    padding-right: 0
-}
-
-.table_unbordered td,
-.table_unbordered th {
-    border: 0
-}
-
-.table_price {
-    margin-bottom: 30px
-}
-
-.table_price td,
-.table_price th {
-    padding: 1rem 1.5rem
-}
-
-@media (max-width:1023px) {
-
-    .table_price td,
-    .table_price th {
-        padding: .5rem;
-        word-break: break-word
-    }
-}
-
-.table_price td {
-    font-weight: 100
-}
-
-.table_price th {
-    font-weight: 400
-}--*/
 
 .table_price {
     border-collapse: collapse;
@@ -2055,104 +1806,7 @@ img.photo {
     border-top: 1px dashed #547f81;
 }
 
-/*----------------------------------*/
 
-/*.preloader {
-  //position: absolute;
-  width: 100%;
-  height: 100%;
-  //background-color: #000000;
-  display: flex;
-  z-index: 2;
-  opacity: 1;
-  transition: opacity 2s, visibility 0s;
-}
-
-.preloader_wrapper {
-  margin: auto;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  display: flex;
-  transition: 0.5s;
-}
-
-.preloader_animate-line {
-  position: absolute;
-  border: 4px solid transparent;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
- 
-.preloader_logo_border {
-  border-top-color: #dbe4eb;
-  animation-name: rotation;
-  animation-duration: 1.5s;
-}
-
-.preloader_logo_border_two {
-  border-bottom-color: #dbe4eb;
-  border-left-color: #dbe4eb;
-  animation-name: rotationReverse;
-  animation-duration: 1.5s;
-}
-
-.preloader_logo_border_three {
-  border-right-color: #dbe4eb;
-  animation-name: rotation;
-  animation-duration: 5s;
-}
-
-.preloader_logo_border_thour {
-  border-right-color: #dbe4eb;
-  border-bottom-color:#dbe4eb;
-  animation-name: rotationBack;
-  animation-duration: 1.5s;
-}
-
-@keyframes rotation { 
-  0% {
-    transform: translate(-50%, -50%) rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotationReverse { 
-  0% {
-    transform: translate(-50%, -50%) rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotationBack { 
-  0% {
-    transform: translate(-50%, -50%) rotateX(60deg) rotateY(10deg) rotateZ(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateX(60deg) rotateY(10deg) rotateZ(360deg);
-  }
-}
-
-
-
-.preloader h1 {
-    position: absolute;
-    color: #dbe4eb;
-    top: 160px;
-    left: 150px;
-}
-
-*/
 
 .ooops__wrapper {
   height: 100%;
@@ -2185,6 +1839,7 @@ img.photo {
     max-width: 296px;
   }
 }
+
 /*----------------------------------*/
 
 #F99295
